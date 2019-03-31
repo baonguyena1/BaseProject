@@ -8,11 +8,18 @@
 
 import UIKit
 
+struct Person: Codable {
+    let name: String?
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        Service<Person>.request("") { (result) in
+            
+        }
     }
 
 

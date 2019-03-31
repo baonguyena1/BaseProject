@@ -12,6 +12,9 @@
 		BF50E8D52250A51300548FB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF50E8D32250A51300548FB6 /* Main.storyboard */; };
 		BF50E8D72250A51400548FB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF50E8D62250A51400548FB6 /* Assets.xcassets */; };
 		BF50E8DA2250A51400548FB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF50E8D82250A51400548FB6 /* LaunchScreen.storyboard */; };
+		BF50E8E42250A5D200548FB6 /* Cacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF50E8E32250A5D200548FB6 /* Cacheable.swift */; };
+		BF50E8E62250A7BD00548FB6 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF50E8E52250A7BD00548FB6 /* Service.swift */; };
+		BF50E8E82250A96200548FB6 /* Codable+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF50E8E72250A96200548FB6 /* Codable+Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		BF50E8D62250A51400548FB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF50E8D92250A51400548FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF50E8DB2250A51400548FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF50E8E32250A5D200548FB6 /* Cacheable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cacheable.swift; sourceTree = "<group>"; };
+		BF50E8E52250A7BD00548FB6 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		BF50E8E72250A96200548FB6 /* Codable+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Helper.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 		BF50E8CE2250A51300548FB6 /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				BF50E8E22250A5B300548FB6 /* Extention */,
+				BF50E8E12250A57700548FB6 /* Service */,
 				BF50E8CF2250A51300548FB6 /* AppDelegate.swift */,
 				BF50E8D12250A51300548FB6 /* ViewController.swift */,
 				BF50E8D32250A51300548FB6 /* Main.storyboard */,
@@ -62,6 +70,23 @@
 				BF50E8DB2250A51400548FB6 /* Info.plist */,
 			);
 			path = BaseProject;
+			sourceTree = "<group>";
+		};
+		BF50E8E12250A57700548FB6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BF50E8E52250A7BD00548FB6 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BF50E8E22250A5B300548FB6 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				BF50E8E32250A5D200548FB6 /* Cacheable.swift */,
+				BF50E8E72250A96200548FB6 /* Codable+Helper.swift */,
+			);
+			path = Extention;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +161,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF50E8D22250A51300548FB6 /* ViewController.swift in Sources */,
+				BF50E8E62250A7BD00548FB6 /* Service.swift in Sources */,
+				BF50E8E82250A96200548FB6 /* Codable+Helper.swift in Sources */,
 				BF50E8D02250A51300548FB6 /* AppDelegate.swift in Sources */,
+				BF50E8E42250A5D200548FB6 /* Cacheable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X4ZDEX56P;
 				INFOPLIST_FILE = BaseProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +332,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X4ZDEX56P;
 				INFOPLIST_FILE = BaseProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
